@@ -1,0 +1,10 @@
+
+<ng-container *ngFor="let v of minusButtonList">
+  <button class="controll-btn" [disabled]="disable" (click)="clickedMemory.emit(v.value)">{{v.label}}</button>
+</ng-container>
+<button class="controll-btn zero-btn" [disabled]="disable" (click)="clickedMemory.emit(0)">
+  <span class="zero-label">0</span>
+</button>
+<ng-container *ngFor="let v of plusButtonList">
+  <button class="controll-btn" [disabled]="disable" (click)="clickedMemory.emit(v.value)">{{v.label}}</button>
+</ng-container>

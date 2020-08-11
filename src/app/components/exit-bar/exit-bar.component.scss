@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exit-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.exit-icon {
+  color: white;
+}
+
+.exit-label {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff80;
+}

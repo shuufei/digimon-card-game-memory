@@ -1,0 +1,9 @@
+<ng-container *ngFor="let v of memory">
+  <button
+    #memoryButtons
+    [class]="['memory-button', v.value === currentMemory && v.role === currentPlayer || v.value === 0 && currentMemory === v.value ? 'active' : 'deactive', v.role === 'player2' ? 'player2' : 'player1']"
+    (click)="changeMemory.emit({ memory: v.value, player: v.value !== 0 ? v.role : currentPlayer })"
+  >
+    {{v.value}}
+  </button>
+</ng-container>

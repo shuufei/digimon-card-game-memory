@@ -1,0 +1,35 @@
+$exit-bar-width: 40px;
+
+:host {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - #{$exit-bar-width} - #{$exit-bar-width});
+  padding-bottom: 24px;
+}
+
+.exit-bar {
+  flex: 0 1 40px;
+  width: 40px;
+  height: 100%;
+  flex-shrink: 1;
+}
+
+.player2 {
+  transform: rotate(180deg);
+}
+
+.your-turn-label {
+  visibility: hidden;
+  &.active {
+    visibility: visible;
+  }
+}
